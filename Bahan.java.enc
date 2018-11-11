@@ -1,0 +1,35 @@
+import java.util.Scanner;
+public class Bahan {
+	public static void DataHotel(int a) {
+	switch (a) {
+	case 1:
+	System.out.println("");
+	System.out.println("Nama : Maestro Hotel");
+	System.out.println("Check-in : 14:00-24:00");
+	System.out.println("Check-out : 12:00");
+	System.out.println("1-2 : orang");
+	System.out.println("Sarapan : Tanpa makanan");
+	System.out.println("Fasilitas Spesial : Bath, Toilet, Non Smoking Room, Internet Access In Room");
+	break;
+	case 2:
+	System.out.println("");
+	System.out.println("Nama : Hotel Kapuas Palace");
+	System.out.println("Check-in : 14:00-23:00");
+	System.out.println("Check-out : 12:00");
+	System.out.println("1-2 : Orang");
+	System.out.println("Sarapan : Tanpa makanan");
+	System.out.println("Fasilitas Spesial : Bath, Toilet, Internet Access In Room");
+	break;
+}
+}
+public static void main (String[] arg){
+Scanner in = new Scanner(System.in);
+Bahan input = new Bahan();
+System.out.println("Data Hotel");
+System.out.println("1. Maestro Hotel");
+System.out.println("2. Hotel Kapuas Palace");
+System.out.print("Masukan kode : ");
+int a = in.nextInt();
+input.DataHotel(a);
+}
+}
